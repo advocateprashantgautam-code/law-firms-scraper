@@ -1,6 +1,6 @@
 # Delhi Law Firms Scraper
 
-A Python web scraper for extracting structured information about Indian law firms from a public legal directory.
+A Python-based web scraper that extracts publicly available information about Indian law firms from an online legal directory.
 
 ## Features
 
@@ -9,9 +9,9 @@ A Python web scraper for extracting structured information about Indian law firm
 - Extracts phone numbers
 - Extracts city and state
 - Extracts practice areas
+- Supports automatic pagination
 - Exports data to CSV
 - Exports data to Excel
-- Handles pagination automatically
 
 ## Technologies Used
 
@@ -23,26 +23,53 @@ A Python web scraper for extracting structured information about Indian law firm
 ## Project Structure
 
 ```
-crawler.py
-parser.py
-extractor.py
-exporter.py
-run.py
-sources.py
+delhi-law-firms-scraper/
+│
+├── crawler.py
+├── parser.py
+├── extractor.py
+├── exporter.py
+├── run.py
+├── sources.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
-## Output
+## Sample Output
+
+The scraper exports:
 
 - law_firms.csv
 - law_firms.xlsx
 
+Extracted fields:
+
+- Name
+- Email
+- Phone
+- City
+- State
+- Practice Areas
+- Description
+- Profile URL
+
+## Installation
+
+```bash
+git clone https://github.com/advocateprashantgautam-code/law-firms-scraper.git
+cd law-firms-scraper
+pip install -r requirements.txt
+python run.py
+```
+
 ## Future Improvements
 
-- Website extraction
-- Full address extraction
-- Social media links
+- Extract complete address
+- Extract official website
+- Extract social media links
 - Better Excel formatting
-- Faster concurrent scraping
+- Concurrent scraping for faster execution
 
 ## Author
 
